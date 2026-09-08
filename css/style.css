@@ -1051,13 +1051,10 @@ nav a.active::after {
    08. ABOUT PHOTO CARD
    ========================================================= */
 
-.about-photo-stack {
+   .about-photo-stack {
     position: relative;
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
 }
 
@@ -1065,27 +1062,23 @@ nav a.active::after {
     position: relative;
 
     width: 100%;
+    max-width: 380px;
 
-    max-width:
-        380px;
+    padding: 1rem;
 
-    padding:
-        1rem;
+    border-radius: 7px;
 
-    border-radius:
-        7px;
+    background: #ffffff;
 
-    background:
-        #ffffff;
-
-    border:
-        1px solid
-        var(--border-light);
+    border: 1px solid var(--border-light);
 
     box-shadow:
         0 15px 38px
         rgba(8, 124, 240, 0.1);
 }
+
+
+/* TAPE */
 
 .tape-card::before {
     content: "";
@@ -1097,11 +1090,8 @@ nav a.active::after {
 
     z-index: 5;
 
-    width:
-        105px;
-
-    height:
-        27px;
+    width: 105px;
+    height: 27px;
 
     transform:
         translateX(-50%)
@@ -1115,31 +1105,23 @@ nav a.active::after {
         rgba(8, 124, 240, 0.28);
 }
 
+
+/* PHOTO AREA */
+
 .tape-card-img {
     position: relative;
 
     width: 100%;
+    height: 420px;
 
-    height:
-        420px;
+    overflow: hidden;
 
-    overflow:
-        hidden;
+    border-radius: 5px;
 
-    border-radius:
-        5px;
-
-    display:
-        flex;
-
-    flex-direction:
-        column;
-
-    justify-content:
-        center;
-
-    align-items:
-        center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     background:
         linear-gradient(
@@ -1148,9 +1130,11 @@ nav a.active::after {
             #070b19
         );
 
-    color:
-        #ffffff;
+    color: #ffffff;
 }
+
+
+/* PHOTO */
 
 .tape-card-img img {
     position: absolute;
@@ -1161,37 +1145,49 @@ nav a.active::after {
     height: 100%;
 
     object-fit: cover;
+    object-position: center;
 
     z-index: 2;
 }
 
+
+/* CAPTION */
+
 .tape-card-caption {
-    margin-top:
-        1rem;
+    margin-top: 1rem;
 
-    text-align:
-        center;
+    padding-bottom: 0.15rem;
 
-    font-family:
-        var(--font-heading);
+    text-align: center;
 
-    font-size:
-        0.75rem;
+    font-family: var(--font-heading);
 
-    font-weight:
-        700;
+    font-size: 0.75rem;
 
-    letter-spacing:
-        0.16em;
+    font-weight: 700;
 
-    color:
-        var(--text-dark);
+    letter-spacing: 0.16em;
+
+    line-height: 1.4;
+
+    color: var(--text-dark);
 }
 
 
 /* =========================================================
    09. EXPERIENCE
    ========================================================= */
+   .journey-note {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+}
+
+.journey-note i {
+    font-size: 0.9rem;
+    color: var(--accent-cyan);
+    transform: rotate(8deg);
+}
 
 .experience-container {
     min-width:
